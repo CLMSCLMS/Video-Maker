@@ -1,0 +1,5 @@
+build/
+out/
+media/*
+!media/README.md
+__pycache__/

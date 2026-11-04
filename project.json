@@ -1,0 +1,188 @@
+{
+  "title": "What a Minute's Worth",
+  "subtitle": "An original country song",
+  "audio": "media/song.mp3",
+  "length_if_no_audio": 310,
+  "resolution": [1920, 1080],
+  "fps": 30,
+  "show_lyrics": true,
+
+  "sections": [
+    {
+      "name": "Intro", "start": 0,
+      "lyrics": [],
+      "shots": [
+        {"id": "s01-farm-sunrise", "note": "Wide shot of the farm at first light, fog on the fields. Title appears."},
+        {"id": "s02-coffee-boots", "note": "Close-up: coffee mug steaming on a truck hood, boots lacing up."}
+      ]
+    },
+    {
+      "name": "Verse 1", "start": 12,
+      "lyrics": [
+        "Five in the morning, coffee's getting cold,",
+        "Diesel engines firing up, another day unfolds.",
+        "CLMS on the trucks, Ohio dirt on my boots,",
+        "Built a life from hard work and never forgot my roots.",
+        "Summer smells like fresh-cut grass, winter brings the snow,",
+        "A hundred people counting on which way I choose to go.",
+        "Three buildings and a farm, another deal on my mind,",
+        "Trying to build an empire without running out of time."
+      ],
+      "shots": [
+        {"id": "s03-trucks-startup", "note": "CLMS trucks firing up in the yard before dawn, headlights on, breath in the cold air."},
+        {"id": "s04-logo-door", "note": "Close-up of the CLMS logo on a truck door."},
+        {"id": "s05-boots-dirt", "note": "Your boots in Ohio dirt, walking toward the crew."},
+        {"id": "s06-mowing-summer", "note": "Summer: crew mowing, fresh-cut stripes in the grass."},
+        {"id": "s07-snow-plow", "note": "Winter: plow trucks pushing snow (last winter's footage works)."},
+        {"id": "s08-crew-huddle", "note": "Morning huddle with the crew - the faces counting on you."},
+        {"id": "s09-buildings-drive", "note": "Driving past each of the three buildings."},
+        {"id": "s10-farm-gate", "note": "You at the farm gate looking out over the land."},
+        {"id": "s11-desk-night", "note": "You at the desk late, phone in hand, plans spread out."}
+      ]
+    },
+    {
+      "name": "Chorus", "start": 52,
+      "lyrics": [
+        "I got a billion-dollar dream and a two-lane road,",
+        "A million things to carry and a heart that wants to go",
+        "Back to where Cheyenne's waiting, where my little boy sleeps,",
+        "Where the things that really matter aren't the things that money keeps.",
+        "I can buy another building, put my name upon the land,",
+        "But I can't buy back a sunset or the touch of her hand.",
+        "I'm chasing down forever on this little piece of earth,",
+        "And learning every day just what a minute's worth."
+      ],
+      "shots": [
+        {"id": "s12-two-lane-road", "note": "CLMS truck on a two-lane country road at golden hour (drone or from a following car)."},
+        {"id": "s13-driving-home", "note": "You driving, glancing at a photo of Cheyenne on your phone or visor."},
+        {"id": "s14-cheyenne-porch", "note": "Cheyenne waiting on the porch, dogs at her feet."},
+        {"id": "s15-son-sleeping", "note": "Your little boy asleep, shot from the doorway."},
+        {"id": "s16-building-sign", "note": "Your name/CLMS sign on one of the buildings."},
+        {"id": "s17-sunset-field", "note": "Sunset over the farm."},
+        {"id": "s18-holding-hands", "note": "Close-up: you and Cheyenne holding hands."},
+        {"id": "s19-dogs-run", "note": "The dogs running across the field toward camera."}
+      ]
+    },
+    {
+      "name": "Verse 2", "start": 88,
+      "lyrics": [
+        "I've sat across from bankers, I've made some big-time plans,",
+        "Turned a little into something with these calloused working hands.",
+        "I know what it takes to win, I know what it takes to lose,",
+        "But the hardest thing I've ever done is knowing what to choose.",
+        "Sometimes I bring the weight of work right through our front door,",
+        "And give the ones I love the least when they deserve so much more.",
+        "Cheyenne's stood beside me through the sunshine and the rain,",
+        "And I'm learning being a better man means letting go of pain."
+      ],
+      "shots": [
+        {"id": "s20-meeting", "note": "You in a meeting or walking into a bank/office, sharper clothes."},
+        {"id": "s21-handshake", "note": "Handshake across a table."},
+        {"id": "s22-working-hands", "note": "Close-up of your hands - dirt, scars, a wrench or shovel."},
+        {"id": "s23-truck-alone", "note": "You alone in the parked truck, engine off, thinking."},
+        {"id": "s24-front-door", "note": "Coming through the front door tired, still on the phone."},
+        {"id": "s25-phone-down", "note": "You set the phone face-down; Cheyenne looks up."},
+        {"id": "s26-rain", "note": "Rain on a window or a storm rolling over the fields."},
+        {"id": "s27-kitchen-hug", "note": "Cheyenne hugging you in the kitchen."}
+      ]
+    },
+    {
+      "name": "Chorus", "start": 128,
+      "lyrics": [
+        "I got a billion-dollar dream and a two-lane road,",
+        "A million things to carry and a heart that wants to go",
+        "Back to where Cheyenne's waiting, where my little boy sleeps,",
+        "Where the things that really matter aren't the things that money keeps.",
+        "I can buy another building, put my name upon the land,",
+        "But I can't buy back a sunset or the touch of her hand.",
+        "I'm chasing down forever on this little piece of earth,",
+        "And learning every day just what a minute's worth."
+      ],
+      "shots": [
+        {"id": "s28-dogs-truck", "note": "Dogs hanging out in the truck (parked or rolling slowly on the farm)."},
+        {"id": "s29-fence-walk", "note": "You, Cheyenne and the dogs walking the fence line."},
+        {"id": "s30-porch-sunset", "note": "You and Cheyenne on the porch at sunset."},
+        {"id": "s31-old-photos", "note": "Old photos from the early days: first truck, first jobs."},
+        {"id": "s32-drone-properties", "note": "Drone over the properties."}
+      ]
+    },
+    {
+      "name": "Verse 3", "start": 164,
+      "lyrics": [
+        "I want my people proud to say they worked beside my name,",
+        "That I cared about their families more than fortune or the fame.",
+        "Want my son to know that strength ain't always standing tall,",
+        "Sometimes it's saying \"I was wrong\" and knowing when to fall.",
+        "I want to leave him something that a bank account can't hold,",
+        "A reason to be grateful and a heart that won't grow cold.",
+        "Teach him how to build a dream, but teach him how to stay,",
+        "And never let tomorrow steal the beauty of today."
+      ],
+      "shots": [
+        {"id": "s33-crew-families", "note": "Company cookout - the crew with their families."},
+        {"id": "s34-crew-laugh", "note": "Shaking hands with an employee, both laughing."},
+        {"id": "s35-son-boots", "note": "Your son clomping around in your boots or hard hat."},
+        {"id": "s36-son-falls", "note": "Your son trips; you kneel and help him up."},
+        {"id": "s37-teach-son", "note": "Teaching your son something - riding the mower with you, using a tool."},
+        {"id": "s38-plant-tree", "note": "Planting a tree together on the farm."},
+        {"id": "s39-son-dogs", "note": "Your son playing with the dogs."}
+      ]
+    },
+    {
+      "name": "Bridge", "start": 204,
+      "lyrics": [
+        "If I make that billion dollars, if my name is known someday,",
+        "If I own a thousand acres and there's nothing left to chase,",
+        "I hope I'm sitting on that porch with Cheyenne by my side,",
+        "Watching our children living out the dreams we kept alive.",
+        "And when they ask me what I'm proud of, when my working days are through,",
+        "I won't talk about the money or the businesses I grew.",
+        "I'll say, \"I loved your mama, and I tried to do things right,",
+        "And the greatest thing I ever built was waiting here each night.\""
+      ],
+      "shots": [
+        {"id": "s40-rocking-chairs", "note": "Two empty rocking chairs on the porch. Slow."},
+        {"id": "s41-cheyenne-slowmo", "note": "Slow motion: Cheyenne turning to camera in golden light.", "speed": 0.5},
+        {"id": "s42-wedding-photos", "note": "Wedding / early relationship photos."},
+        {"id": "s43-house-night", "note": "The house at night, porch light on, warm windows."},
+        {"id": "s44-forehead-kiss", "note": "You kissing Cheyenne's forehead."}
+      ]
+    },
+    {
+      "name": "Final Chorus", "start": 244,
+      "lyrics": [
+        "I still got a billion-dollar dream and a two-lane road,",
+        "But I'm learning there's a difference between being rich and being home.",
+        "I still want to build an empire, still want to touch the sky,",
+        "But I don't want to miss this life while watching it go by.",
+        "So I'll keep on chasing mountains, keep my boots down in the dirt,",
+        "Keep on loving that Ohio land and giving all I'm worth.",
+        "And if I never make that billion, well, I hope I've learned",
+        "That a life that's full of love is more than any dollar earned."
+      ],
+      "shots": [
+        {"id": "s45-drone-rise", "note": "Big drone rise over the farm at sunrise."},
+        {"id": "s46-fleet-lineup", "note": "Whole CLMS fleet lined up, crew waving."},
+        {"id": "s47-two-pairs-boots", "note": "Your boots and your son's little boots side by side in the dirt."},
+        {"id": "s48-family-field", "note": "Hero shot: you, Cheyenne, your son and the dogs in the field."},
+        {"id": "s49-bonfire", "note": "Night bonfire, everyone laughing."},
+        {"id": "s50-barn-dance", "note": "You and Cheyenne slow dancing in the barn or kitchen."}
+      ]
+    },
+    {
+      "name": "Outro", "start": 284,
+      "lyrics": [
+        "Three buildings and a farm, one woman holding my heart,",
+        "A little boy who calls me Dad, and dreams bigger than the stars.",
+        "Yeah, I'm still building something...",
+        "Just making sure I don't forget what it's all for."
+      ],
+      "shots": [
+        {"id": "s51-building-dusk", "note": "One of the buildings at dusk, lights coming on."},
+        {"id": "s52-cheyenne-smile", "note": "Cheyenne smiling at camera."},
+        {"id": "s53-son-dad", "note": "Your son running into your arms."},
+        {"id": "s54-stars-farm", "note": "Stars over the farm. Hold, fade to black."}
+      ]
+    }
+  ]
+}
