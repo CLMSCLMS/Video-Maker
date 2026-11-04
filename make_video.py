@@ -147,6 +147,10 @@ def render_still(img, shot, idx, w, h, fps, frames, dst, card=False):
 
 def render_clip(path, shot, w, h, fps, frames, dst):
     speed = shot.get("speed", 1)
+    if "out" in shot and "speed" not in shot:
+        # Short clip: slow it down to fill the shot instead of looping.
+        seg = shot["out"] - shot.get("in", 0)
+        speed = max(min(seg / (frames / fps), 1), 0.3)
     vf = (f"[0:v]setpts=PTS/{speed},fps={fps},split[a][b];"
           f"[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},"
           f"boxblur=30,eq=brightness=-0.08[bg];"
@@ -163,7 +167,7 @@ def render_shot(args):
     f0, f1 = round(shot["t0"] * fps), round(shot["t1"] * fps)
     frames = max(f1 - f0, 1)
     dst = BUILD / f"seg_{idx:03d}.mp4"
-    path = find_media(shot["id"])
+    path = (MEDIA / shot["file"]) if "file" in shot else find_media(shot["id"])
     if path and path.suffix.lower() in VIDEO_EXT:
         render_clip(path, shot, w, h, fps, frames, dst)
     else:
@@ -226,7 +230,7 @@ def main():
     if a.list:
         have = 0
         for s in all_shots:
-            p = find_media(s["id"])
+            p = (MEDIA / s["file"]) if "file" in s else find_media(s["id"])
             have += bool(p)
             print(("  ok   " if p else "  --   ") + s["id"] + ("" if p else f"   {s['note']}"))
         print(f"\n{have}/{len(all_shots)} shots have media.")
