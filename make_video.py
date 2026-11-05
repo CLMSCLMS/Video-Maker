@@ -57,6 +57,10 @@ def find_media(shot_id):
 def build_timeline(proj, total):
     """Give every shot and lyric line an absolute start/end time."""
     secs = proj["sections"]
+    if proj.get("skip_missing"):
+        # Leave out shots with no media; the rest share the section's time.
+        def has(s): return (MEDIA / s["file"]).exists() if "file" in s else find_media(s["id"])
+        secs = [{**sec, "shots": [s for s in sec["shots"] if has(s)] or sec["shots"]} for sec in secs]
     if secs[-1]["start"] >= total - 5:
         # Planned timings run past the song: stretch them to fit.
         k = total / proj["length_if_no_audio"]
@@ -147,10 +151,10 @@ def render_still(img, shot, idx, w, h, fps, frames, dst, card=False):
 
 def render_clip(path, shot, w, h, fps, frames, dst):
     speed = shot.get("speed", 1)
-    if "out" in shot and "speed" not in shot:
+    if "speed" not in shot:
         # Short clip: slow it down to fill the shot instead of looping.
-        seg = shot["out"] - shot.get("in", 0)
-        speed = max(min(seg / (frames / fps), 1), 0.3)
+        seg = shot.get("out", probe_duration(path)) - shot.get("in", 0)
+        speed = max(min(seg / (frames / fps), 1), 0.25)
     vf = (f"[0:v]setpts=PTS/{speed},fps={fps},split[a][b];"
           f"[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},"
           f"boxblur=30,eq=brightness=-0.08[bg];"
@@ -190,8 +194,8 @@ def write_subtitles(proj, lines, w, h):
         "[V4+ Styles]",
         "Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, "
         "Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV",
-        f"Style: Lyric,DejaVu Serif,{int(54*s)},&H00F5F5FA,&H00101010,&H80000000,"
-        f"1,0,1,{max(2*s,1):.1f},{max(2*s,1):.1f},2,{int(160*s)},{int(160*s)},{int(70*s)}",
+        f"Style: Lyric,DejaVu Serif,{int(52*s)},&H00FFFFFF,&H70000000,&H70000000,"
+        f"1,0,3,{14*s:.1f},0,2,{int(160*s)},{int(160*s)},{int(70*s)}",
         f"Style: Title,DejaVu Serif,{int(96*s)},&H00F0F5FA,&H00101010,&H80000000,"
         f"1,0,1,{3*s:.1f},{3*s:.1f},5,60,60,60",
         f"Style: Sub,DejaVu Sans,{int(36*s)},&H00B4D2E6,&H00101010,&H80000000,"
